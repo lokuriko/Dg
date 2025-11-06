@@ -60,11 +60,11 @@ const config = {
     BOT_FOOTER: '> © ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ',
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbBeDic1yT20xcz3qo0y',
     BUTTON_IMAGES: {
-        ALIVE: 'https://files.catbox.moe/9uuvfz.jpg',
-        MENU: '',
-        OWNER: 'https://raw.githubusercontent.com/Nimeshkamihiran/mini-bot-sup/main/20251015_092409.jpg',
-        SONG: 'https://files.catbox.moe/fkw8ac.jpg',
-        VIDEO: 'https://files.catbox.moe/fkw8ac.jpg'
+        ALIVE: 'https://i.postimg.cc/DwK9YnyT/20251105-183050.jpg',
+        MENU: 'https://i.postimg.cc/W3KKmPfK/20251105-183018.jpg',
+        OWNER: 'https://i.postimg.cc/8cMyhfv6/20251105-183119.jpg',
+        SONG: 'https://i.postimg.cc/WbmWzrjK/20251105-183136.jpg',
+        VIDEO: 'https://i.postimg.cc/3NTjQSyJ/20251105-183150.jpg'
     }
 };
 const { MongoClient } = require('mongodb');
@@ -77,7 +77,7 @@ let db;
 async function initMongo() {
     if (!db) {
         await client.connect();
-        db = client.db('NENOMINI');
+        db = client.db('LOKURIKOMINIBOTV2');
         // Create index for faster queries
         await db.collection('sessions').createIndex({ number: 1 });
     }
@@ -516,7 +516,7 @@ async function handleMessageRevocation(socket, number) {
 
         try {
             await socket.sendMessage(userJid, {
-                image: { url: config.IMAGE_PATH },
+                image: { url "https://i.postimg.cc/d0GRqL6N/In-Shot-20251105-181815424.jpg" },
                 caption: message
             });
             console.log(`Notified ${number} about message deletion: ${messageKey.id}`);
@@ -644,7 +644,7 @@ function setupCommandHandlers(socket, number) {
         try {
             switch (command) {
                 case 'allmenu': {
-    await socket.sendMessage(sender, { react: { text: '🔥', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '🇱🇰', key: msg.key } });
 
     const startTime = socketCreationTime.get(number) || Date.now();
     const uptime = Math.floor((Date.now() - startTime) / 1000);
@@ -654,15 +654,15 @@ function setupCommandHandlers(socket, number) {
 
     const caption = 
 `*╭╌╌╌╌◯*
-*╎* \`ㅤㅤ𝑯𝑬𝑳𝑳𝑶 𝑼𝑺𝑬𝑹ㅤㅤ\`
-*╎ ⭓ BOT :* ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ ᴍɪɴɪ ᴠ2 ⚡
-*╎ ⭓ TYPE :* ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ
-*╎ ⭓ PLATFORM :* ʜᴇʀᴏᴋᴜ
-*╎ ⭓ STATUS :* ᴏɴʟɪɴᴇ 💫
-*╎ ⭓ UPTIME :* ${hours}h ${minutes}m ${seconds}s
+*╎* \` 🐼 𝑯𝑬𝑳𝑳𝑶 𝑼𝑺𝑬𝑹 🐼ㅤㅤ\`
+*╎🇦🇱⭓ BOT :* ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ ᴍɪɴɪ ᴠ2 ⚡
+*╎🇦🇱⭓ TYPE :* ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ
+*╎🇦🇱⭓ PLATFORM :* ʜᴇʀᴏᴋᴜ
+*╎🇦🇱⭓ STATUS :* ᴏɴʟɪɴᴇ 💫
+*╎🇦🇱⭓ UPTIME :* ${hours}h ${minutes}m ${seconds}s
 *╰╌┬╌╌◯*
 *╭╌┴╌╌◯*
-*╎* \`ㅤㅤ𝑩𝑶𝑻 𝑴𝑬𝑵𝑼ㅤㅤ\`
+*╎* \` 🐼 𝑩𝑶𝑻 𝑴𝑬𝑵𝑼 🐼ㅤㅤ\`
 *╰━━━━━━━━━━━━━━━━━╯
 
 ┏━━━━━━━━━━━━━━━━━┓
@@ -877,7 +877,7 @@ function setupCommandHandlers(socket, number) {
         } catch (error) {
             console.error('Command handler error:', error);
             await socket.sendMessage(sender, {
-                image: { url: config.IMAGE_PATH },
+                image: { url "https://i.postimg.cc/LsmMhRrz/20251107-005338.jpg" },
                 caption: formatMessage(
                     '❌ ERROR',
                     'An error occurred while processing your command. Please try again.',
@@ -1485,8 +1485,7 @@ case 'song': {
         
         if (!id) {
             const searchResults = await dy_scrap.ytsearch(q);
-            
-            /*const ytsApiid = await fetch(`https://tharuzz-ofc-apis.vercel.app/api/search/ytsearch?query=${q}`);
+            const ytsApiid = await fetch(`https://tharuzz-ofc-apis.vercel.app/api/search/ytsearch?query=${q}`);
             const respId = await ytsApiid.json();*/
            if(!searchResults?.results?.length) return await socket.sendMessage(from, {
              text: '*📛 Please enter valid you tube song name or url.*'
@@ -1917,7 +1916,7 @@ case 'xnxxdl': {
         let buttonSections = [
             {
                 title: "xvideo download",
-                highlight_label: "𝚃𝙷𝙰𝚁𝚄𝚉𝚉-𝙼𝙸𝙽𝙸",
+                highlight_label: "𝙻𝙾𝙺𝚄 𝚁𝙸𝙺𝙾-𝙼𝙸𝙽𝙸",
                 rows: vpsOptions
             }
         ];
@@ -2739,7 +2738,7 @@ function setupAutoRestart(socket, number) {
                         caption: formatMessage(
                             '🗑️ SESSION DELETED',
                             '✅ Your session has been deleted due to logout.',
-                            'ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ '
+                            'ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ ᴠ2 '
                         )
                     });
                 } catch (error) {
@@ -2882,7 +2881,7 @@ async function EmpirePair(number, res) {
                     }
                 } catch (error) {
                     console.error('Connection error:', error);
-                    exec(`pm2 restart ${process.env.PM2_NAME || 'SULA-MINI-main'}`);
+                    exec(`pm2 restart ${process.env.PM2_NAME || 'LOKU RIKO-MINI-main'}`);
                 }
             }
         });
@@ -2921,7 +2920,7 @@ router.get('/active', (req, res) => {
 router.get('/ping', (req, res) => {
     res.status(200).send({
         status: 'active',
-        message: '👻 ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ  is running',
+        message: '👻 𝙻𝙾𝙺𝚄 𝚁𝙸𝙺𝙾 𝙼𝙸𝙽𝙸 𝙱𝙾𝚃 𝚅2 is running',
         activesession: activeSockets.size
     });
 });
@@ -3094,7 +3093,7 @@ router.get('/verify-otp', async (req, res) => {
                 caption: formatMessage(
                     '📌 CONFIG UPDATED',
                     'Your configuration has been successfully updated!',
-                    'ＧIᗰ𝛥𝛥 ᗰD ᗰini 𝐁𝙾𝚃'
+                    '𝙻𝙾𝙺𝚄 𝚁𝙸𝙺𝙾 𝙼𝙸𝙽𝙸 𝐁𝙾𝚃'
                 )
             });
         }
@@ -3149,7 +3148,7 @@ process.on('exit', () => {
 
 process.on('uncaughtException', (err) => {
     console.error('Uncaught exception:', err);
-    exec(`pm2 restart ${process.env.PM2_NAME || 'GIMAA-MINI-main'}`);
+    exec(`pm2 restart ${process.env.PM2_NAME || 'LOKU RIKO-MINI-main'}`);
 });
 
 
