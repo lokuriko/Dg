@@ -20,8 +20,8 @@
 
 <!-- Banner Image -->
 <p align="center">
-  <a href="https://i.imghippo.com/files/GFuA9132q.jpg">
-    <img src="https://i.imghippo.com/files/GFuA9132q.jpg" width="100%" height="auto">
+  <a href="https://i.postimg.cc/d0GRqL6N/In-Shot-20251105-181815424.jpg">
+    <img src="https://i.postimg.cc/d0GRqL6N/In-Shot-20251105-181815424.jpg" width="100%" height="auto">
   </a>
 </p>
 
