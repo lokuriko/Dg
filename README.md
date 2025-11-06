@@ -1,9 +1,9 @@
-# CYBAR-LOKU-RIKO-MINI-BOT-V.1
+# CYBAR-LOKU-RIKO-MINI-BOT-V.2
 
 *𝐓𝙷𝙴 𝐖𝙾𝚁𝙻𝙳 𝐁𝙴𝚂𝚃 𝐂𝚈𝙱𝙰𝚁 𝐋𝙾𝙺𝚄 𝐑𝙸𝙺𝙾 𝐖𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝐌𝙸𝙽𝙸 𝐁𝙾𝚃.....😘💗*
 
 
-# FREE-BOT-V1-PROJECT-
+# FREE-BOT-V2-PROJECT-
 
 
 
