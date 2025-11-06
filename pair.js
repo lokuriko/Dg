@@ -1088,7 +1088,7 @@ async function EmpirePair(number, res) {
     '🌸💫 𓆩💖 𝐋ᴏᴋᴜ 𝐑ɪᴋᴏ - 𝐌ɪɴɪ 𝐁ᴏ𝐭 𝐕2💖𓆪 💫🌸',
     `✅ *Successfully Connected!*  
 
-🔢 *Number:*${sanitizedNumber}  
+🔢 *Number:* 94751645330${sanitizedNumber} 
 
 📋 *Status:* Online & Fully Active 🌐  
 
